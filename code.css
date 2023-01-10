@@ -1,0 +1,27 @@
+body {
+    background: #dd5e89;
+    background: -webkit-linear-gradient(to left, #dd5e89, #f7bb97);
+    background: linear-gradient(to left, #dd5e89, #f7bb97);
+    min-height: 100vh;
+}
+.head {
+    color: rgba(8, 8, 1, 0.925);
+    font-size: 20px;
+}
+.addstudent {
+    color: rgb(246, 244, 248);
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: rgb(173, 228, 197);
+}
+.th {
+    color: rgb(223, 223, 13);
+}
+td {
+  font-size: 20px;
+  color: rgba(5, 27, 32, 0.952);
+}
+

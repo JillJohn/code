@@ -49,7 +49,7 @@ function getStudent($student_id, &$rec){
 
 function saveStudent($rec){
 	$link = db_open();
-	$sql = "INSERT INTO student(first_name, last_name, age, email) VALUES ('".$rec->first_name."', '".$rec->last_name."','".$rec->age."' , '".$rec->email."')";
+	$sql = "INSERT INTO student(first_name, last_name, age, gender, email) VALUES ('".$rec->first_name."', '".$rec->last_name."','".$rec->age."', '".$rec->gender."' , '".$rec->email."')";
 	$res = mysqli_query($link, $sql);
 	db_close($link);
 	if($res){
@@ -75,7 +75,7 @@ function removeStudent($student_id){
 
 function updateStudent($rec){
 	$link = db_open();
-	$sql = "UPDATE student SET first_name='".$rec->first_name."', last_name='".$rec->last_name."', age='".$rec->age."', email='".$rec->email."' WHERE id='".$rec->id."'";
+	$sql = "UPDATE student SET first_name='".$rec->first_name."', last_name='".$rec->last_name."', age='".$rec->age."', gender='".$rec->gender."', email='".$rec->email."' WHERE id='".$rec->id."'";
 	$res = mysqli_query($link, $sql);
 	db_close($link);
 	if($res){

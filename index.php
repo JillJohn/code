@@ -10,6 +10,7 @@
 		$rec['first_name'] = '';
 		$rec['last_name'] = '';
 		$rec['age']= '';
+		$rec['gender']= '';
 		$rec['email']= '';
 		$rec['id'] = -1;
 		showStudentForm($rec);
@@ -26,6 +27,7 @@
 		$rec->first_name = $_POST['first_name'];
 		$rec->last_name = $_POST['last_name'];
 		$rec->age = $_POST['age'];
+		$rec->gender = $_POST['gender'];
 		$rec->email = $_POST['email'];
 		$rec->id = $_POST['id'];
 		if($rec->id > 0)
